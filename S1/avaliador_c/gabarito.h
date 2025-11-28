@@ -1,0 +1,1 @@
+void gabarito(int m, int n, int M[m][n]);

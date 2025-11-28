@@ -1,0 +1,1 @@
+void solucao(int m, int n, int M[m][n]);
