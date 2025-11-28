@@ -8,7 +8,7 @@ Copyright (c) 2025 Luiz Gustavo Cordeiro
 
 Este projeto é distribuído sob a licença **GNU General Public License v3.0 (GPL-3.0)**. Você tem permissão para usar, estudar, modificar e redistribuir este software, desde que  mantenha este aviso de copyright e distribua quaisquer versões derivadas sob a mesma licença.
 
-Para mais detalhes, consulte o arquivo acesse:  
+Para mais detalhes, consulte o arquivo `LICENSE` ou acesse:  
 https://www.gnu.org/licenses/gpl-3.0.en.html
 
 # Descrição do problema
@@ -35,12 +35,18 @@ Existem várias possibilidades para o tipo de resposta esperado em uma questão 
 - Criação de um programa (com <code>main()</code>, incluindo bibliotecas, etc.) que recebe dados da entrada padrão e mostra dados na saída padrão.
 - Criação de funções com comportamento específico.
 
+Essas variações são encontradas em sites de treino de programação. Por exemplo, as questões do [HackerRank](https://www.hackerrank.com) e do [beecrowd](https://beecrowd.com/) lidam com entrada e saída padrão; As questões do [LeetCode](https://leetcode.com/) pedem funções de comportamento específico.
+
 ## 3. Geração de testes
 
 A geração de testes depende do tipo de questão e do tipo de resposta esperada. Novamente, focaremos em duas
 
 - Criação de testes estáticos (após gerados, sempre os mesmos testes são aplicados)
 - Criação dinâmica de testes (uma lista de testes é criada em cada iteração do avaliador)
+
+Embora a criação de testes estáticos possa ser manual, focaremos na geração automática dos testes estáticos.
+
+A criação dinâmica de testes será feita em conjunto com o avaliador.
 
 ## 4. Criação e aplicação do avaliador
 
@@ -53,28 +59,29 @@ Note que a utilização de avaliadores já consolidados interfere na solução d
 
 # Soluções apresentadas
 
-São apresentadas 4 soluções para diferentes escolhas das etapas:
+São apresentadas 4 soluções (em ordem crescente de complexidade) para diferentes escolhas das etapas:
 
-#### S.1
+#### S1
 
 - Questões que pedem um programa que recebe e mostra dados na saída padrão
 - Testes estáticos
 - Utilização de BIOTES
 
-#### S.2
+#### S2
 
 - Questões que pedem funções de comportamento espécífico
 - Testes estáticos
 - Utilização de BIOTES
 
-#### S.3
+#### S3
+
+- Questões que pedem funções de comportamento específico
+- Testes dinâmicos
+- Utilização de avaliador específico.
+
+#### S4
 
 - Questões que pedem um programa que recebe e mostra dados na saída padrão
 - Testes dinâmicos
 - Utilização de avaliador específico
 
-#### S.4
-
-- Questões que pedem funções de comportamento específico
-- Testes dinâmicos
-- Utilização de avaliador específico.
